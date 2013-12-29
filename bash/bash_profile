@@ -1,0 +1,17 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+PATH=$PATH:$HOME/bin
+export LANG=zh_CN.utf8
+export PATH
+export SVN_EDITOR=vim
+alias grep='grep --color'
+alias tailf='tail -f'
+
+# start z.sh
+. ~/.z.sh
