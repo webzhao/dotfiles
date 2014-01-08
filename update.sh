@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ "$PWD" == "$HOME" ]]; then
-    PROJECT_DIR="dotfiles"
+    PROJECT_DIR=".dotfiles"
 else
     PROJECT_DIR=`basename $PWD`
 fi
