@@ -33,7 +33,10 @@ set lcs=tab:\|_,trail:~
 "smarty
 let smarty_left_delimiter='{%'
 let smarty_right_delimiter='%}'
+
+"file type
 au BufRead,BufNewFile *.tpl set filetype=html
+au BufRead,BufNewFile *.json set filetype=javascript
 
 "zencoding
 let g:user_zen_settings = {
