@@ -2,6 +2,9 @@
 # link files to user directory
 
 # link vim files
+if [[ -h ~/.vim ]]; then
+    unlink ~/.vim
+fi
 ln -sf "$PWD/vim" ~/.vim
 ln -sf "$PWD/vim/vimrc" ~/.vimrc
 
