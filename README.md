@@ -3,15 +3,16 @@ dotfiles
 
 Configuration files for vim, bash, etc.
 
-### How to use dotfiles
+### Get dotfiles
 
-1. Get dotfiles
-    * from git repository: `git clone git@github.com:webzhao/dotfiles.git` or
-    * [download the zip archive](https://github.com/webzhao/dotfiles/archive/master.zip)
+```sh
+cd ~ && curl https://raw.github.com/webzhao/dotfiles/master/update.sh -k | sh
+```
 
-2. Install
+### Update
 
-   ```
-   cd dotfiles
-   sh install.sh
-   ```
+```sh
+cd ~/.dotfiles && sh update.sh
+```
+
+
