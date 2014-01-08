@@ -11,8 +11,14 @@ EXTRACT_DIR="dotfiles-master"
 
 git_update()
 {
-    echo 'update from git repository'
-    git pull origin master
+    if [[ -f .vim ]]; then
+        echo 'update from git repository'
+        git pull origin master
+    else
+        git clone https://github.com/webzhao/dotfiles.git $PROJECT_DIR
+        cd $PROJECT_DIR
+        sh install.sh
+    fi
 }
 
 zip_update()
