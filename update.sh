@@ -13,10 +13,10 @@ git_update()
 {
     if [[ -f .git ]]; then
         echo 'update from git repository'
-        git pull origin master
+        env GIT_SSL_NO_VERIFY=true git pull origin master
     else
-        git clone https://github.com/webzhao/dotfiles.git $PROJECT_DIR
-        cd $PROJECT_DIR
+        env GIT_SSL_NO_VERIFY=true git clone https://github.com/webzhao/dotfiles.git .dotfiles
+        cd .dotfiles
         sh install.sh
     fi
 }
@@ -28,7 +28,7 @@ zip_update()
 
     # download file
     echo "downloading $ZIP_FILE ..."
-    wget https://github.com/webzhao/dotfiles/archive/master.zip --no-check-certificate -q -O $ZIP_FILE
+    curl https://codeload.github.com/webzhao/dotfiles/zip/master -k -o $ZIP_FILE
 
     # unzip archive
     echo "deflating $ZIP_FILE ..."
