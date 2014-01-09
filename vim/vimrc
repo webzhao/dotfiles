@@ -25,6 +25,7 @@ set smartcase
 
 "editing
 set autoindent
+set backspace=2 "make backspace work like most other apps
 
 "white space
 set list
