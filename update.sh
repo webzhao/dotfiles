@@ -11,7 +11,7 @@ EXTRACT_DIR="dotfiles-master"
 
 git_update()
 {
-    if [[ -f .git ]]; then
+    if [[ -e .git ]]; then
         echo 'update from git repository'
         git pull origin master
     else
