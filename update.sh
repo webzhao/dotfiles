@@ -13,9 +13,9 @@ git_update()
 {
     if [[ -f .git ]]; then
         echo 'update from git repository'
-        env GIT_SSL_NO_VERIFY=true git pull origin master
+        git pull origin master
     else
-        env GIT_SSL_NO_VERIFY=true git clone https://github.com/webzhao/dotfiles.git .dotfiles
+        git clone git://github.com/webzhao/dotfiles.git .dotfiles
         cd .dotfiles
         sh install.sh
     fi
