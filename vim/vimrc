@@ -26,6 +26,7 @@ set smartcase
 "editing
 set autoindent
 set backspace=2 "make backspace work like most other apps
+set mouse=a
 
 "white space
 set list
@@ -53,4 +54,6 @@ filetype plugin indent on
 "markdown
 let g:vim_markdown_folding_disabled=1
 
-set mouse=a
+"jshint
+let jshint2_save=1
+
