@@ -27,6 +27,7 @@ set smartcase
 set autoindent
 set backspace=2 "make backspace work like most other apps
 set mouse=a
+set pastetoggle=<F2> "use F2 to toggle paste mode
 
 "white space
 set list
