@@ -6,7 +6,7 @@ Configuration files for vim, bash, etc.
 ### Get dotfiles
 
 ```sh
-cd ~ && curl https://raw.github.com/webzhao/dotfiles/master/update.sh -k | sh
+cd ~ && https://raw.githubusercontent.com/webzhao/dotfiles/master/update.sh -k | sh
 ```
 
 ### Update
