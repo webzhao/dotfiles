@@ -42,7 +42,6 @@ au BufRead,BufNewFile *.tpl set filetype=html
 au BufRead,BufNewFile *.json set filetype=javascript
 
 "zencoding
-let g:user_emmet_leader_key='<C-e>'
 
 "plugin
 filetype plugin indent on
