@@ -47,6 +47,9 @@ au BufRead,BufNewFile *.json set filetype=javascript
 "plugin
 filetype plugin indent on
 
+"ctrlp
+let g:ctrlp_custom_ignore='node_modules'
+
 "markdown
 let g:vim_markdown_folding_disabled=1
 
