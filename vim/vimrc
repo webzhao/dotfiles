@@ -39,13 +39,16 @@ let smarty_right_delimiter='%}'
 
 "file type
 au BufRead,BufNewFile *.tpl set filetype=html
+au BufRead,BufNewFile *.vue set filetype=html
 au BufRead,BufNewFile *.json set filetype=javascript
 
 "zencoding
-let g:user_emmet_leader_key='<C-e>'
 
 "plugin
 filetype plugin indent on
+
+"ctrlp
+let g:ctrlp_custom_ignore='node_modules'
 
 "markdown
 let g:vim_markdown_folding_disabled=1

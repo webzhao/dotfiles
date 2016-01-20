@@ -6,6 +6,7 @@ if exists("b:did_ftplugin")
     finish
 endif
 
+imap <expr> <C-e> emmet#expandAbbrIntelligent("\<C-e>")
 augroup matchhtmlparen
   autocmd! CursorMoved,CursorMovedI,WinEnter <buffer> call s:Highlight_Matching_Pair()
 augroup END
