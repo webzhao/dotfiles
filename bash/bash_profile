@@ -15,3 +15,6 @@ alias tailf='tail -f'
 
 # start z.sh
 . ~/.z.sh
+
+#fish shell
+#[ -f /usr/bin/fish ] && fish
