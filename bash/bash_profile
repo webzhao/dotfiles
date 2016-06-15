@@ -13,4 +13,3 @@ alias tailf='tail -f'
 alias x5='python ~/x5-inspector/inspector.py  --adb /usr/local/bin/adb'
 alias md5sum='md5'
 
-# start z.sh
