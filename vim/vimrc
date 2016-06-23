@@ -39,8 +39,6 @@ let smarty_right_delimiter='%}'
 
 "file type
 au BufRead,BufNewFile *.tpl set filetype=html
-"au BufRead,BufNewFile *.vue set filetype=html
-au BufRead,BufNewFile *.json set filetype=javascript
 
 "zencoding
 
