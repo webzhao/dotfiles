@@ -1,4 +1,4 @@
-
+set shell=bash
 "editor look
 set number
 set ruler
