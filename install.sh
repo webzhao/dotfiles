@@ -20,3 +20,5 @@ ln -sf "$PWD/tmux.conf" ~/.tmux.conf
 # source new bash profile
 source ~/.bash_profile
 
+# git
+ln -sf "$PWD/gitconfig" ~/.gitconfig
