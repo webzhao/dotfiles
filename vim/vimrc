@@ -1,4 +1,7 @@
 set shell=bash
+set exrc
+set secure
+
 "editor look
 set number
 set ruler
